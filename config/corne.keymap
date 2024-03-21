@@ -8,6 +8,25 @@
 #include <dt-bindings/zmk/keys.h>
 
 / {
+    combos {
+        compatible = "zmk,combos";
+
+        tab {
+            bindings = <&kp TAB>;
+            key-positions = <13 14>;
+        };
+
+        esc {
+            bindings = <&kp ESC>;
+            key-positions = <13 16>;
+        };
+
+        capsw {
+            bindings = <&caps_word>;
+            key-positions = <16 19>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
