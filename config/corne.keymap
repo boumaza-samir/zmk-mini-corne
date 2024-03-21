@@ -22,7 +22,7 @@
 &none  &kp X        &kp W           &kp M           &kp G             &kp J            &kp HASH   &kp PERIOD         &kp SQT          &kp DQT          &kp SLASH    &none
 &none  &mt LCTRL S  &mt LEFT_ALT C  &mt LEFT_GUI N  &mt LEFT_SHIFT T  &kp K            &kp COMMA  &mt RIGHT_SHIFT A  &mt RIGHT_GUI E  &mt RIGHT_ALT I  &mt RCTRL H  &none
 &none  &kp B        &kp P           &kp L           &kp D             &kp V            &kp MINUS  &kp U              &kp O            &kp Y            &kp F        &none
-                                    &mo 0           &kp R             &kp BACKSPACE    &kp RET    &kp SPACE          &mo 0
+                                    &mo 1           &kp R             &kp BACKSPACE    &kp RET    &kp SPACE          &mo 2
             >;
         };
 
