@@ -59,7 +59,16 @@
 &trans  &kp Q     &kp Z     &trans    &trans    &trans           &kp DLLR   &kp TILDE  &kp AT    &kp PRCNT  &kp HASH       &trans
 &trans  &kp LBRC  &kp LPAR  &kp RPAR  &kp RBRC  &none            &kp CARET  &kp QMARK  &kp EXCL  &kp AMPS   &kp PIPE       &trans
 &trans  &kp LBKT  &kp LT    &kp GT    &kp RBKT  &kp LS(TILDE)    &kp UNDER  &kp GRAVE  &kp SEMI  &kp COLON  &kp BACKSLASH  &trans
-                            &trans    &trans    &trans           &trans     &trans     &trans
+                            &trans    &trans    &trans           &trans     &trans     &mo 3
+            >;
+        };
+
+        layer_3 {
+            bindings = <
+&trans  &trans     &trans    &trans    &trans     &trans    &trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans
+&trans  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT  &trans    &trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans
+&trans  &trans     &trans    &trans    &trans     &trans    &trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans
+                             &trans    &trans     &trans    &trans  &trans  &trans
             >;
         };
     };
