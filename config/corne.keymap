@@ -38,9 +38,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp X        &kp W           &kp M           &kp G             &kp J            &kp HASH   &kp PERIOD         &kp SQT          &kp DQT          &kp SLASH    &none
-&none  &mt LCTRL S  &mt LEFT_ALT C  &mt LEFT_GUI N  &mt LEFT_SHIFT T  &kp K            &kp COMMA  &mt RIGHT_SHIFT A  &mt RIGHT_GUI E  &mt RIGHT_ALT I  &mt RCTRL H  &none
-&none  &kp B        &kp P           &kp L           &kp D             &kp V            &kp MINUS  &kp U              &kp O            &kp Y            &kp F        &none
+&none  &kp X        &kp W           &kp M           &kp G             &kp J            &kp HASH   &kp U              &kp O           &kp Y            &kp F        &none
+&none  &mt LCTRL S  &mt LEFT_ALT C  &mt LEFT_GUI N  &mt LEFT_SHIFT T  &kp K            &kp DQT    &mt RIGHT_SHIFT A  &mt LEFT_GUI E  &mt RIGHT_ALT I  &mt RCTRL H  &none
+&none  &kp B        &kp P           &kp L           &kp D             &kp V            &kp MINUS  &kp SQT            &kp COMMA       &kp DOT          &kp SLASH    &none
                                     &mo 1           &kp R             &kp BACKSPACE    &kp RET    &kp SPACE          &mo 2
             >;
         };
@@ -56,10 +56,10 @@
 
         opt {
             bindings = <
-&trans  &kp Z       &kp Q     &trans        &trans        &trans           &kp LS(DLLR)   &kp LS(COLON)  &kp GRAVE     &kp LS(CARET)  &kp BSLH      &trans
-&trans  &kp LS(LT)  &kp LBKT  &kp LS(LPAR)  &kp LS(LBRC)  &none            &kp SEMI       &kp LS(QMARK)  &kp LS(EXCL)  &kp LS(AMPS)   &kp LS(PIPE)  &trans
-&trans  &kp LS(GT)  &kp RBKT  &kp LS(RPAR)  &kp LS(RBRC)  &kp LS(TILDE)    &kp LS(UNDER)  &kp LS(TILDE)  &kp LS(AT)    &kp LS(PRCNT)  &trans        &trans
-                              &trans        &trans        &trans           &trans         &trans         &trans
+&trans  &kp Q     &kp Z     &trans    &trans    &trans           &kp DLLR   &kp TILDE  &kp AT    &kp PRCNT  &kp HASH       &trans
+&trans  &kp LBRC  &kp LPAR  &kp RPAR  &kp RBRC  &none            &kp CARET  &kp QMARK  &kp EXCL  &kp AMPS   &kp PIPE       &trans
+&trans  &kp LBKT  &kp LT    &kp GT    &kp RBKT  &kp LS(TILDE)    &kp UNDER  &kp GRAVE  &kp SEMI  &kp COLON  &kp BACKSLASH  &trans
+                            &trans    &trans    &trans           &trans     &trans     &trans
             >;
         };
     };
