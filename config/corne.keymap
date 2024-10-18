@@ -26,6 +26,11 @@
             bindings = <&caps_word>;
             key-positions = <16 19>;
         };
+
+        i3w_layer {
+            bindings = <&mo 4>;
+            key-positions = <36 41>;
+        };
     };
 
     keymap {
@@ -70,6 +75,15 @@
 &trans  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT  &trans    &trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans
 &trans  &trans     &trans    &trans    &trans     &trans    &trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans
                              &trans    &trans     &trans    &trans  &trans  &trans
+            >;
+        };
+
+        i3w {
+            bindings = <
+&trans  &kp LG(Q)  &trans        &kp LG(UP)    &trans         &trans    &trans  &kp LG(N7)  &kp LG(N8)  &kp LG(N9)  &trans     &trans
+&trans  &kp LSHFT  &kp LG(LEFT)  &kp LG(DOWN)  &kp LG(RIGHT)  &trans    &trans  &kp LG(N4)  &kp LG(N5)  &kp LG(N6)  &kp RSHFT  &trans
+&trans  &kp LCTRL  &trans        &kp LG(S)     &trans         &trans    &trans  &kp LG(N1)  &kp LG(N2)  &kp LG(N3)  &kp RCTRL  &trans
+                                 &trans        &trans         &trans    &trans  &kp LG(N0)  &trans
             >;
         };
     };
