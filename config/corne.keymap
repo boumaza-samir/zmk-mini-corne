@@ -259,6 +259,16 @@
             tapping-term-ms = <100>;
             flavor = "tap-preferred";
         };
+
+        roll_hold: roll_hold {
+            compatible = "zmk,behavior-hold-tap";
+            label = "ROLL_HOLD";
+            bindings = <&kp>, <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <100>;
+            flavor = "tap-preferred";
+        };
     };
 
     keymap {
@@ -272,10 +282,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp X        &kp W           &kp M           &kp G             &kp J            &kp HASH   &kp U              &kp O           &kp Y            &kp F        &none
-&none  &mt LCTRL S  &mt LEFT_ALT C  &mt LEFT_GUI N  &mt LEFT_SHIFT T  &kp K            &kp DQT    &mt RIGHT_SHIFT A  &mt LEFT_GUI E  &mt RIGHT_ALT I  &mt RCTRL H  &none
-&none  &kp B        &kp P           &kp L           &kp D             &kp V            &kp MINUS  &kp SQT            &kp COMMA       &kp DOT          &kp SLASH    &none
-                                    &mo 1           &kp R             &kp BACKSPACE    &kp RET    &kp SPACE          &mo 2
+&none  &kp X               &kp W                  &kp M                  &kp G                    &kp J            &kp HASH   &kp U                     &kp O                  &kp Y                   &kp F               &none
+&none  &roll_hold LCTRL S  &roll_hold LEFT_ALT C  &roll_hold LEFT_GUI N  &roll_hold LEFT_SHIFT T  &kp K            &kp DQT    &roll_hold RIGHT_SHIFT A  &roll_hold LEFT_GUI E  &roll_hold RIGHT_ALT I  &roll_hold RCTRL H  &none
+&none  &kp B               &kp P                  &kp L                  &kp D                    &kp V            &kp MINUS  &kp SQT                   &kp COMMA              &kp DOT                 &kp SLASH           &none
+                                                  &mo 1                  &kp R                    &kp BACKSPACE    &kp RET    &kp SPACE                 &mo 2
             >;
         };
 
