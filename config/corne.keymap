@@ -118,6 +118,7 @@
             bindings = <&els>;
             key-positions = <20 21>;
             layers = <0>;
+            timeout-ms = <50>;
         };
 
         thn {
