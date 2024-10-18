@@ -89,13 +89,6 @@
             timeout-ms = <10>;
         };
 
-        shh {
-            bindings = <&shh>;
-            key-positions = <13 14>;
-            layers = <0>;
-            timeout-ms = <10>;
-        };
-
         ch {
             bindings = <&ch>;
             key-positions = <15 14>;
@@ -163,6 +156,13 @@
             key-positions = <1 2>;
             layers = <5>;
         };
+
+        sshh {
+            bindings = <&sshh>;
+            key-positions = <14 13>;
+            timeout-ms = <10>;
+            layers = <0>;
+        };
     };
 
     macros {
@@ -189,15 +189,6 @@
             #binding-cells = <0>;
             bindings = <&kp T &kp H>;
             label = "TH";
-            wait-ms = <30>;
-            tap-ms = <30>;
-        };
-
-        shh: shh {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp S &kp H>;
-            label = "SHH";
             wait-ms = <30>;
             tap-ms = <30>;
         };
@@ -277,6 +268,15 @@
             #binding-cells = <0>;
             bindings = <&kp F &kp I>;
             label = "FI";
+            wait-ms = <30>;
+            tap-ms = <30>;
+        };
+
+        sshh: sshh {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp H>;
+            label = "SSHH";
             wait-ms = <30>;
             tap-ms = <30>;
         };
