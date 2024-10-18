@@ -39,7 +39,20 @@
             #binding-cells = <0>;
             bindings = <&kp Q &kp U>;
             label = "QU";
-            wait-ms = <100>;
+            wait-ms = <30>;
+            tap-ms = <30>;
+        };
+    };
+
+    behaviors {
+        lingerq: lingerq {
+            compatible = "zmk,behavior-hold-tap";
+            label = "LINGERQ";
+            bindings = <&kp>, <&qu>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <100>;
+            flavor = "tap-preferred";
         };
     };
 
@@ -72,10 +85,10 @@
 
         opt {
             bindings = <
-&trans  &qu       &kp Z     &trans    &trans    &trans           &kp DLLR   &kp TILDE  &kp AT    &kp PRCNT  &kp HASH       &trans
-&trans  &kp LBRC  &kp LPAR  &kp RPAR  &kp RBRC  &none            &kp CARET  &kp QMARK  &kp EXCL  &kp AMPS   &kp PIPE       &trans
-&trans  &kp LBKT  &kp LT    &kp GT    &kp RBKT  &kp LS(TILDE)    &kp UNDER  &kp GRAVE  &kp SEMI  &kp COLON  &kp BACKSLASH  &trans
-                            &tog 5    &trans    &trans           &trans     &trans     &none
+&trans  &lingerq Q 0  &kp Z     &trans    &trans    &trans           &kp DLLR   &kp TILDE  &kp AT    &kp PRCNT  &kp HASH       &trans
+&trans  &kp LBRC      &kp LPAR  &kp RPAR  &kp RBRC  &none            &kp CARET  &kp QMARK  &kp EXCL  &kp AMPS   &kp PIPE       &trans
+&trans  &kp LBKT      &kp LT    &kp GT    &kp RBKT  &kp LS(TILDE)    &kp UNDER  &kp GRAVE  &kp SEMI  &kp COLON  &kp BACKSLASH  &trans
+                                &tog 5    &trans    &trans           &trans     &trans     &none
             >;
         };
 
