@@ -153,9 +153,15 @@
 
         gam_win {
             bindings = <&kp LGUI>;
-            key-positions = <1 2>;
+            key-positions = <4 5>;
             layers = <5>;
             timeout-ms = <10>;
+        };
+
+        gam_esc {
+            bindings = <&kp ESC>;
+            key-positions = <1 2>;
+            layers = <5>;
         };
     };
 
