@@ -15,96 +15,120 @@
         tab {
             bindings = <&kp TAB>;
             key-positions = <13 14>;
+            layers = <0>;
         };
 
         esc {
             bindings = <&kp ESC>;
             key-positions = <13 16>;
+            layers = <0>;
         };
 
         capsw {
             bindings = <&caps_word>;
             key-positions = <16 19>;
+            layers = <0>;
         };
 
         i3w_layer {
             bindings = <&mo 4>;
             key-positions = <36 41>;
+            layers = <0>;
         };
 
         qu {
             bindings = <&lingerq Q 0>;
             key-positions = <1 2>;
+            layers = <0>;
         };
 
         zed {
             bindings = <&kp Z>;
             key-positions = <1 3>;
+            layers = <0>;
         };
 
         col {
             bindings = <&kp COLON>;
             key-positions = <32 33>;
+            layers = <0>;
         };
 
         semi {
             bindings = <&kp SEMI>;
             key-positions = <32 31>;
+            layers = <0>;
         };
 
         sch {
             bindings = <&sch>;
             key-positions = <13 14 15>;
+            layers = <0>;
         };
 
         tch {
             bindings = <&tch>;
             key-positions = <13 14 16>;
+            layers = <0>;
         };
 
         wh {
             bindings = <&wh>;
             key-positions = <2 3>;
+            layers = <0>;
         };
 
-        sh {
-            bindings = <&sh>;
+        shh {
+            bindings = <&shh>;
             key-positions = <13 14>;
+            layers = <0>;
         };
 
         ch {
             bindings = <&ch>;
             key-positions = <15 14>;
+            layers = <0>;
         };
 
         th {
             bindings = <&th>;
             key-positions = <16 15>;
+            layers = <0>;
         };
 
         gh {
             bindings = <&gh>;
             key-positions = <4 3>;
+            layers = <0>;
         };
 
         ph {
             bindings = <&ph>;
             key-positions = <26 27>;
+            layers = <0>;
         };
 
         if {
             bindings = <&if>;
             key-positions = <21 22>;
+            layers = <0>;
         };
 
         els {
             bindings = <&els>;
             key-positions = <20 21>;
+            layers = <0>;
         };
 
         thn {
             bindings = <&thn>;
             key-positions = <17 16>;
+            layers = <0>;
+        };
+
+        fi {
+            bindings = <&fi>;
+            key-positions = <10 9>;
         };
     };
 
@@ -136,11 +160,11 @@
             tap-ms = <30>;
         };
 
-        sh: sh {
+        shh: shh {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp S &kp H>;
-            label = "SH";
+            label = "SHH";
             wait-ms = <30>;
             tap-ms = <30>;
         };
@@ -211,6 +235,15 @@
             #binding-cells = <0>;
             bindings = <&kp T &kp H &kp E &kp N>;
             label = "THN";
+            wait-ms = <30>;
+            tap-ms = <30>;
+        };
+
+        fi: fi {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp F &kp I>;
+            label = "FI";
             wait-ms = <30>;
             tap-ms = <30>;
         };
