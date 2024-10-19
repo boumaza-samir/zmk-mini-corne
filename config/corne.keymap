@@ -322,10 +322,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp X               &kp W                  &kp M                  &kp G                    &kp J            &kp HASH   &kp U                     &kp O                  &kp Y                   &kp F               &none
-&none  &roll_hold LCTRL S  &roll_hold LEFT_ALT C  &roll_hold LEFT_GUI N  &roll_hold LEFT_SHIFT T  &kp K            &kp DQT    &roll_hold RIGHT_SHIFT A  &roll_hold LEFT_GUI E  &roll_hold RIGHT_ALT I  &roll_hold RCTRL H  &none
-&none  &kp B               &kp P                  &kp L                  &kp D                    &kp V            &kp MINUS  &kp SQT                   &kp COMMA              &kp DOT                 &kp SLASH           &none
-                                                  &mo 1                  &kp R                    &kp BACKSPACE    &kp RET    &kp SPACE                 &mo 2
+&none  &kp X               &kp W                  &kp M                  &kp G                    &kp J                  &kp HASH   &kp U                     &kp O                  &kp Y                   &kp F               &none
+&none  &roll_hold LCTRL S  &roll_hold LEFT_ALT C  &roll_hold LEFT_GUI N  &roll_hold LEFT_SHIFT T  &kp K                  &kp DQT    &roll_hold RIGHT_SHIFT A  &roll_hold LEFT_GUI E  &roll_hold RIGHT_ALT I  &roll_hold RCTRL H  &none
+&none  &kp B               &kp P                  &kp L                  &kp D                    &kp V                  &kp MINUS  &kp SQT                   &kp COMMA              &kp DOT                 &kp SLASH           &none
+                                                  &mo 1                  &kp R                    &roll_hold DEL BSPC    &kp RET    &kp SPACE                 &mo 2
             >;
         };
 
@@ -343,7 +343,7 @@
 &trans  &lingerq Q 0  &kp Z     &trans    &trans    &trans           &kp DLLR   &kp TILDE  &kp AT    &kp PRCNT  &kp HASH       &trans
 &trans  &kp LBRC      &kp LPAR  &kp RPAR  &kp RBRC  &none            &kp CARET  &kp QMARK  &kp EXCL  &kp AMPS   &kp PIPE       &trans
 &trans  &kp LBKT      &kp LT    &kp GT    &kp RBKT  &kp LS(TILDE)    &kp UNDER  &kp GRAVE  &kp SEMI  &kp COLON  &kp BACKSLASH  &trans
-                                &tog 5    &trans    &trans           &trans     &trans     &none
+                                &tog 5    &trans    &kp DEL          &trans     &trans     &none
             >;
         };
 
