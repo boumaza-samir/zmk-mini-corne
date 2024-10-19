@@ -146,7 +146,7 @@
 
         gam_win {
             bindings = <&kp LGUI>;
-            key-positions = <4 5>;
+            key-positions = <4 3>;
             layers = <5>;
             timeout-ms = <10>;
         };
