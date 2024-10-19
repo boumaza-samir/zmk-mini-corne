@@ -22,7 +22,7 @@
         esc {
             bindings = <&kp ESC>;
             key-positions = <13 16>;
-            layers = <0>;
+            layers = <0 5>;
             timeout-ms = <10>;
         };
 
@@ -151,17 +151,16 @@
             timeout-ms = <10>;
         };
 
-        gam_esc {
-            bindings = <&kp ESC>;
-            key-positions = <1 2>;
-            layers = <5>;
-        };
-
         sshh {
             bindings = <&sshh>;
             key-positions = <13 15>;
             timeout-ms = <10>;
             layers = <0>;
+        };
+
+        swit {
+            bindings = <&swit>;
+            key-positions = <13 2>;
         };
     };
 
@@ -239,7 +238,7 @@
         if: if {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp I &kp F>;
+            bindings = <&kp I &kp F &kp SPACE>;
             label = "IF";
             wait-ms = <30>;
             tap-ms = <30>;
@@ -248,7 +247,7 @@
         els: els {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp E &kp L &kp S &kp E>;
+            bindings = <&kp E &kp L &kp S &kp E &kp SPACE>;
             label = "ELS";
             wait-ms = <30>;
             tap-ms = <30>;
@@ -257,7 +256,7 @@
         thn: thn {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp T &kp H &kp E &kp N>;
+            bindings = <&kp T &kp H &kp E &kp N &kp SPACE>;
             label = "THN";
             wait-ms = <30>;
             tap-ms = <30>;
@@ -279,6 +278,14 @@
             label = "SSHH";
             wait-ms = <30>;
             tap-ms = <30>;
+        };
+
+        swit: swit {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp S &kp W &kp I &kp T &kp C &kp H &kp SPACE>;
+            label = "SWIT";
+            wait-ms = <10>;
         };
     };
 
