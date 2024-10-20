@@ -173,7 +173,7 @@
 
         au {
             bindings = <&au>;
-            key-positions = <20 23>;
+            key-positions = <19 22>;
         };
     };
 
