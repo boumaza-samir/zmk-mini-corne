@@ -376,10 +376,10 @@
 
         opt {
             bindings = <
-&none  &lingerq Q 0  &kp Z     &none     &none     &none            &kp DLLR   &kp TILDE  &kp AT    &kp PRCNT  &kp HASH       &none
-&none  &kp LBRC      &kp LPAR  &kp RPAR  &kp RBRC  &none            &kp CARET  &kp QMARK  &kp EXCL  &kp AMPS   &kp PIPE       &none
-&none  &kp LBKT      &kp LT    &kp GT    &kp RBKT  &kp LS(TILDE)    &kp UNDER  &kp GRAVE  &kp SEMI  &kp COLON  &kp BACKSLASH  &none
-                               &tog 5    &none     &kp DEL          &none      &none      &none
+&none  &lingerq Q 0  &kp Z     &none     &none     &none      &kp DLLR   &kp TILDE  &kp AT    &kp PRCNT  &kp HASH       &none
+&none  &kp LBRC      &kp LPAR  &kp RPAR  &kp RBRC  &none      &kp CARET  &kp QMARK  &kp EXCL  &kp AMPS   &kp PIPE       &none
+&none  &kp LBKT      &kp LT    &kp GT    &kp RBKT  &none      &kp UNDER  &kp GRAVE  &kp SEMI  &kp COLON  &kp BACKSLASH  &none
+                               &tog 5    &none     &kp DEL    &none      &none      &none
             >;
         };
 
