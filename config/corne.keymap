@@ -176,7 +176,6 @@
             #binding-cells = <0>;
             bindings = <&kp Q &kp U>;
             label = "QU";
-            wait-ms = <30>;
             tap-ms = <30>;
         };
 
@@ -185,7 +184,6 @@
             #binding-cells = <0>;
             bindings = <&kp W &kp H>;
             label = "WH";
-            wait-ms = <30>;
             tap-ms = <30>;
         };
 
@@ -194,7 +192,6 @@
             #binding-cells = <0>;
             bindings = <&kp T &kp H>;
             label = "TH";
-            wait-ms = <30>;
             tap-ms = <30>;
         };
 
@@ -203,7 +200,6 @@
             #binding-cells = <0>;
             bindings = <&kp C &kp H>;
             label = "CH";
-            wait-ms = <30>;
             tap-ms = <30>;
         };
 
@@ -221,7 +217,6 @@
             #binding-cells = <0>;
             bindings = <&kp G &kp H>;
             label = "GH";
-            wait-ms = <30>;
             tap-ms = <30>;
         };
 
@@ -230,7 +225,6 @@
             #binding-cells = <0>;
             bindings = <&kp S &kp C &kp H>;
             label = "SCH";
-            wait-ms = <30>;
             tap-ms = <30>;
         };
 
@@ -239,6 +233,7 @@
             #binding-cells = <0>;
             bindings = <&kp T &kp C &kp H>;
             label = "TCH";
+            tap-ms = <30>;
         };
 
         if: if {
@@ -246,7 +241,6 @@
             #binding-cells = <0>;
             bindings = <&kp I &kp F &kp SPACE>;
             label = "IF";
-            wait-ms = <30>;
             tap-ms = <30>;
         };
 
@@ -255,7 +249,6 @@
             #binding-cells = <0>;
             bindings = <&kp E &kp L &kp S &kp E &kp SPACE>;
             label = "ELS";
-            wait-ms = <30>;
             tap-ms = <30>;
         };
 
@@ -264,7 +257,6 @@
             #binding-cells = <0>;
             bindings = <&kp T &kp H &kp E &kp N &kp SPACE>;
             label = "THN";
-            wait-ms = <30>;
             tap-ms = <30>;
         };
 
@@ -273,7 +265,6 @@
             #binding-cells = <0>;
             bindings = <&kp F &kp I>;
             label = "FI";
-            wait-ms = <30>;
             tap-ms = <30>;
         };
 
@@ -282,7 +273,6 @@
             #binding-cells = <0>;
             bindings = <&kp S &kp H>;
             label = "SSHH";
-            wait-ms = <30>;
             tap-ms = <30>;
         };
 
@@ -291,16 +281,16 @@
             #binding-cells = <0>;
             bindings = <&kp S &kp W &kp I &kp T &kp C &kp H &kp SPACE>;
             label = "SWIT";
-            wait-ms = <10>;
+            tap-ms = <30>;
         };
 
         au: au {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp A &sl 6>;
-
+            bindings = <&kp A &sk_short 6>;
             label = "AU";
             tap-ms = <30>;
+            wait-ms = <1>;
         };
     };
 
