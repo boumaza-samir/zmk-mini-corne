@@ -163,6 +163,7 @@
         swit {
             bindings = <&swit>;
             key-positions = <13 2>;
+            layers = <0>;
         };
 
         gam_esc {
