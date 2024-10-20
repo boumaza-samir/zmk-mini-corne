@@ -291,8 +291,8 @@
             #binding-cells = <0>;
             bindings = <&kp A &sl 6>;
             label = "AU";
-            tap-ms = <(-1)>;
-            wait-ms = <(-1)>;
+            tap-ms = <10>;
+            wait-ms = <10>;
         };
     };
 
