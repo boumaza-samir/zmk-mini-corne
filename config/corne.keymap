@@ -333,23 +333,15 @@
             flavor = "tap-preferred";
         };
 
-        tap_del: tap_del {
-            compatible = "zmk,behavior-tap-dance";
-            label = "TAP_DEL";
-            #binding-cells = <0>;
-            bindings = <&none>, <&kp DEL>, <&kp BSPC>;
-
-            tapping-term-ms = <200>;
-        };
-
-        deltrik: deltrik {
+        ht_reptap: ht_reptap {
             compatible = "zmk,behavior-hold-tap";
-            label = "DELTRIK";
-            bindings = <&tap_del>, <&kp>;
+            label = "HT_REPTAP";
+            bindings = <&kp>, <&kp>;
 
             #binding-cells = <2>;
             tapping-term-ms = <170>;
             flavor = "tap-preferred";
+            quick-tap-ms = <100>;
         };
     };
 
@@ -364,10 +356,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp X               &kp W                  &kp M                  &kp G                    &kp J                   &kp HASH   &kp U                     &kp O                  &kp Y                   &kp F               &none
-&none  &roll_hold LCTRL S  &roll_hold LEFT_ALT C  &roll_hold LEFT_GUI N  &roll_hold LEFT_SHIFT T  &kp K                   &kp DQT    &roll_hold RIGHT_SHIFT A  &roll_hold LEFT_GUI E  &roll_hold RIGHT_ALT I  &roll_hold RCTRL H  &none
-&none  &kp B               &kp P                  &kp L                  &kp D                    &kp V                   &kp MINUS  &kp SQT                   &kp COMMA              &kp DOT                 &kp SLASH           &none
-                                                  &mo 1                  &kp R                    &deltrik 0 BACKSPACE    &kp RET    &kp SPACE                 &mo 2
+&none  &kp X               &kp W                  &kp M                  &kp G                    &kp J                       &kp HASH   &kp U                     &kp O                  &kp Y                   &kp F               &none
+&none  &roll_hold LCTRL S  &roll_hold LEFT_ALT C  &roll_hold LEFT_GUI N  &roll_hold LEFT_SHIFT T  &kp K                       &kp DQT    &roll_hold RIGHT_SHIFT A  &roll_hold LEFT_GUI E  &roll_hold RIGHT_ALT I  &roll_hold RCTRL H  &none
+&none  &kp B               &kp P                  &kp L                  &kp D                    &kp V                       &kp MINUS  &kp SQT                   &kp COMMA              &kp DOT                 &kp SLASH           &none
+                                                  &mo 1                  &kp R                    &ht_reptap DEL BACKSPACE    &kp RET    &kp SPACE                 &mo 2
             >;
         };
 
