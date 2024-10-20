@@ -337,9 +337,9 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DEL";
             #binding-cells = <0>;
-            bindings = <&kp DEL>, <&kp BACKSPACE>;
+            bindings = <&none>, <&kp DEL>, <&kp BSPC>;
 
-            tapping-term-ms = <170>;
+            tapping-term-ms = <200>;
         };
 
         deltrik: deltrik {
