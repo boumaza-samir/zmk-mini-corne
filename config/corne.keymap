@@ -287,7 +287,7 @@
         au: au {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp A &sk_short 6>;
+            bindings = <&sk_short 6 &kp A>;
             label = "AU";
             tap-ms = <30>;
             wait-ms = <1>;
@@ -339,7 +339,7 @@
             #binding-cells = <0>;
             bindings = <&roll_hold DEL BSPC>, <&kp BACKSPACE>;
 
-            tapping-term-ms = <100>;
+            tapping-term-ms = <200>;
         };
     };
 
