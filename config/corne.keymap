@@ -144,6 +144,7 @@
             bindings = <&fi>;
             key-positions = <10 9>;
             timeout-ms = <10>;
+            layers = <0>;
         };
 
         gam_win {
