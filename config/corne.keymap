@@ -342,6 +342,13 @@
             #binding-cells = <1>;
             release-after-ms = <125>;
         };
+
+        tap_del: tap_del {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TAP_DEL";
+            #binding-cells = <0>;
+            bindings = <&roll_hold DEL BSPC>, <&kp BACKSPACE>;
+        };
     };
 
     keymap {
@@ -355,10 +362,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp X               &kp W                  &kp M                  &kp G                    &kp J                  &kp HASH   &kp U                  &kp O                  &kp Y                   &kp F               &none
-&none  &roll_hold LCTRL S  &roll_hold LEFT_ALT C  &roll_hold LEFT_GUI N  &roll_hold LEFT_SHIFT T  &kp K                  &kp DQT    &au_dap RIGHT_SHIFT 0  &roll_hold LEFT_GUI E  &roll_hold RIGHT_ALT I  &roll_hold RCTRL H  &none
-&none  &kp B               &kp P                  &kp L                  &kp D                    &kp V                  &kp MINUS  &kp SQT                &kp COMMA              &kp DOT                 &kp SLASH           &none
-                                                  &mo 1                  &kp R                    &roll_hold DEL BSPC    &kp RET    &kp SPACE              &mo 2
+&none  &kp X               &kp W                  &kp M                  &kp G                    &kp J       &kp HASH   &kp U                  &kp O                  &kp Y                   &kp F               &none
+&none  &roll_hold LCTRL S  &roll_hold LEFT_ALT C  &roll_hold LEFT_GUI N  &roll_hold LEFT_SHIFT T  &kp K       &kp DQT    &au_dap RIGHT_SHIFT 0  &roll_hold LEFT_GUI E  &roll_hold RIGHT_ALT I  &roll_hold RCTRL H  &none
+&none  &kp B               &kp P                  &kp L                  &kp D                    &kp V       &kp MINUS  &kp SQT                &kp COMMA              &kp DOT                 &kp SLASH           &none
+                                                  &mo 1                  &kp R                    &tap_del    &kp RET    &kp SPACE              &mo 2
             >;
         };
 
