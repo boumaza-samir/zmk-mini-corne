@@ -170,6 +170,11 @@
             key-positions = <1 2>;
             layers = <5>;
         };
+
+        au {
+            bindings = <&au>;
+            key-positions = <20 23>;
+        };
     };
 
     macros {
@@ -289,10 +294,9 @@
         au: au {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp A &sl 6>;
+            bindings = <&kp A &kp U>;
             label = "AU";
-            tap-ms = <1>;
-            wait-ms = <1>;
+            tap-ms = <30>;
         };
     };
 
@@ -348,10 +352,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp X               &kp W                  &kp M                  &kp G                    &kp J       &kp HASH   &kp U                  &kp O                  &kp Y                   &kp F               &none
-&none  &roll_hold LCTRL S  &roll_hold LEFT_ALT C  &roll_hold LEFT_GUI N  &roll_hold LEFT_SHIFT T  &kp K       &kp DQT    &au_dap RIGHT_SHIFT 0  &roll_hold LEFT_GUI E  &roll_hold RIGHT_ALT I  &roll_hold RCTRL H  &none
-&none  &kp B               &kp P                  &kp L                  &kp D                    &kp V       &kp MINUS  &kp SQT                &kp COMMA              &kp DOT                 &kp SLASH           &none
-                                                  &mo 1                  &kp R                    &tap_del    &kp RET    &kp SPACE              &mo 2
+&none  &kp X               &kp W                  &kp M                  &kp G                    &kp J       &kp HASH   &kp U                     &kp O                  &kp Y                   &kp F               &none
+&none  &roll_hold LCTRL S  &roll_hold LEFT_ALT C  &roll_hold LEFT_GUI N  &roll_hold LEFT_SHIFT T  &kp K       &kp DQT    &roll_hold RIGHT_SHIFT A  &roll_hold LEFT_GUI E  &roll_hold RIGHT_ALT I  &roll_hold RCTRL H  &none
+&none  &kp B               &kp P                  &kp L                  &kp D                    &kp V       &kp MINUS  &kp SQT                   &kp COMMA              &kp DOT                 &kp SLASH           &none
+                                                  &mo 1                  &kp R                    &tap_del    &kp RET    &kp SPACE                 &mo 2
             >;
         };
 
@@ -397,15 +401,6 @@
 &trans  &kp LSHFT  &kp A  &kp S  &kp D     &kp F        &kp FSLH  &kp N4  &kp N5  &kp N6  &kp MINUS  &trans
 &trans  &kp LCTRL  &kp Z  &kp X  &kp C     &kp V        &kp BSPC  &kp N1  &kp N2  &kp N3  &kp DOT    &trans
                           &kp I  &kp LALT  &kp SPACE    &kp RET   &kp N0  &tog 5
-            >;
-        };
-
-        au {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp A   &trans  &trans  &kp U   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
     };
