@@ -8,9 +8,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
-&sl {
-    release-after-ms = 125;
-};
+&sl { release-after-ms = 125; };
 
 / {
     combos {
@@ -291,7 +289,7 @@
         au: au {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&sk_short 6 &kp A>;
+            bindings = <&sl 6 &kp A>;
             label = "AU";
             tap-ms = <30>;
             wait-ms = <30>;
@@ -327,14 +325,6 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
-        };
-
-        sk_short: sk_short {
-            compatible = "zmk,behavior-sticky-key";
-            label = "SK_SHORT";
-            bindings = <&mo>;
-            #binding-cells = <1>;
-            release-after-ms = <125>;
         };
 
         tap_del: tap_del {
