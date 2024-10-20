@@ -289,7 +289,7 @@
         au: au {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp A &sl 6>;
+            bindings = <&sl 6>;
             label = "AU";
             tap-ms = <30>;
             wait-ms = <30>;
@@ -403,7 +403,7 @@
         au {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &kp U   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp A   &trans  &trans  &kp U   &trans
 &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans    &trans  &trans  &trans
             >;
