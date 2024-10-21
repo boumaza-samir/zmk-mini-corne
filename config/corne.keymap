@@ -305,16 +305,6 @@
             flavor = "tap-preferred";
         };
 
-        au_dap: au_dap {
-            compatible = "zmk,behavior-hold-tap";
-            label = "AU_DAP";
-            bindings = <&kp>, <&au>;
-
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
-        };
-
         ht_reptap: ht_reptap {
             compatible = "zmk,behavior-hold-tap";
             label = "HT_REPTAP";
