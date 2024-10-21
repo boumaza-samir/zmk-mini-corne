@@ -335,7 +335,7 @@
             >;
         };
 
-        fnk {
+        num {
             bindings = <
 &none  &none           &kp HOME      &kp UP        &kp END       &kp LC(F5)    &kp ASTERISK  &kp N7  &kp N8  &kp N9  &kp PLUS   &none
 &none  &kp LCTRL       &kp LEFT      &kp DOWN      &kp RIGHT     &none         &kp SLASH     &kp N4  &kp N5  &kp N6  &kp MINUS  &none
@@ -344,7 +344,7 @@
             >;
         };
 
-        opt {
+        sym {
             bindings = <
 &none  &lingerq Q 0  &kp Z     &none     &none     &none      &kp DLLR   &kp TILDE  &kp AT    &kp PRCNT  &kp HASH       &none
 &none  &kp LBRC      &kp LPAR  &kp RPAR  &kp RBRC  &none      &kp CARET  &kp QMARK  &kp EXCL  &kp AMPS   &kp PIPE       &none
@@ -353,7 +353,7 @@
             >;
         };
 
-        f12 {
+        fnk {
             bindings = <
 &none  &none      &none     &none     &none      &none    &none  &kp F1  &kp F2   &kp F3   &kp F4   &none
 &none  &kp LCTRL  &kp LALT  &kp LGUI  &kp LSHFT  &none    &none  &kp F5  &kp F6   &kp F7   &kp F8   &none
@@ -371,7 +371,7 @@
             >;
         };
 
-        game {
+        gam {
             bindings = <
 &none  &kp TAB    &kp Q  &kp W  &kp E     &kp R        &kp STAR  &kp N7  &kp N8  &kp N9  &kp PLUS   &none
 &none  &kp LSHFT  &kp A  &kp S  &kp D     &kp F        &kp FSLH  &kp N4  &kp N5  &kp N6  &kp MINUS  &none
