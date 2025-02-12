@@ -125,7 +125,7 @@
 
         fi {
             bindings = <&fi>;
-            key-positions = <10 9>;
+            key-positions = <33 34>;
             layers = <0>;
         };
 
@@ -328,9 +328,9 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp X               &kp W                  &kp M                  &kp G                    &kp J                       &kp HASH   &kp U                     &kp O                  &kp Y                   &kp F               &none
+&none  &kp X               &kp W                  &kp M                  &kp G                    &kp J                       &kp HASH   &kp APOSTROPHE            &kp COMMA              &kp DOT                 &kp SLASH           &none
 &none  &roll_hold LCTRL S  &roll_hold LEFT_ALT C  &roll_hold LEFT_GUI N  &roll_hold LEFT_SHIFT T  &kp K                       &kp DQT    &roll_hold RIGHT_SHIFT A  &roll_hold LEFT_GUI E  &roll_hold RIGHT_ALT I  &roll_hold RCTRL H  &none
-&none  &kp B               &kp P                  &kp L                  &kp D                    &kp V                       &kp MINUS  &kp SQT                   &kp COMMA              &kp DOT                 &kp SLASH           &none
+&none  &kp B               &kp P                  &kp L                  &kp D                    &kp V                       &kp MINUS  &kp U                     &kp O                  &kp Y                   &kp F               &none
                                                   &mo 1                  &kp R                    &ht_reptap DEL BACKSPACE    &kp RET    &kp SPACE                 &mo 2
             >;
         };
