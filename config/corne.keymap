@@ -38,12 +38,6 @@
             layers = <0>;
         };
 
-        qu {
-            bindings = <&lingerq Q 0>;
-            key-positions = <1 2>;
-            layers = <0>;
-        };
-
         col {
             bindings = <&kp COLON>;
             key-positions = <32 33>;
