@@ -157,9 +157,9 @@
 
         sym {
             bindings = <
-&none  &none     &none     &none     &none     &none      &kp DLLR   &kp GRAVE  &kp SEMI  &kp COLON    &kp BACKSLASH  &none
-&none  &kp LBRC  &kp LPAR  &kp RPAR  &kp RBRC  &none      &kp CARET  &kp QMARK  &kp EXCL  &kp AMPS     &kp PIPE       &none
-&none  &kp LBKT  &kp LT    &kp GT    &kp RBKT  &none      &kp UNDER  &kp TILDE  &kp AT    &kp PERCENT  &kp POUND      &none
+&none  &none     &none     &none     &none     &none      &kp DLLR   &kp GRAVE  &kp SQT   &kp DOUBLE_QUOTES  &kp POUND      &none
+&none  &kp LBRC  &kp LPAR  &kp RPAR  &kp RBRC  &none      &kp CARET  &kp QMARK  &kp EXCL  &kp AMPS           &kp PIPE       &none
+&none  &kp LBKT  &kp LT    &kp GT    &kp RBKT  &none      &kp UNDER  &kp TILDE  &kp AT    &kp PERCENT        &kp BACKSLASH  &none
                            &tog 5    &none     &kp DEL    &none      &none      &none
             >;
         };
