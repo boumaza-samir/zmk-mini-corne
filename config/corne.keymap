@@ -126,7 +126,7 @@
 
             bindings = <
 &none  &lingerq Q 0        &kp W                  &kp E                  &kp R                    &kp T                       &kp Y    &kp U                     &kp I                   &kp O                   &kp P                       &none
-&none  &roll_hold LCTRL A  &roll_hold LEFT_ALT S  &roll_hold LEFT_GUI D  &roll_hold LEFT_SHIFT F  &kp G                       &kp H    &roll_hold RIGHT_SHIFT J  &roll_hold RIGHT_WIN K  &roll_hold RIGHT_ALT L  &roll_hold RCTRL SEMICOLON  &none
+&none  &roll_hold LCTRL A  &roll_hold LEFT_ALT S  &roll_hold LEFT_GUI D  &roll_hold LEFT_SHIFT F  &kp G                       &kp J    &roll_hold RIGHT_SHIFT H  &roll_hold RIGHT_WIN K  &roll_hold RIGHT_ALT L  &roll_hold RCTRL SEMICOLON  &none
 &none  &kp Z               &kp X                  &kp C                  &kp V                    &kp B                       &kp N    &kp M                     &kp COMMA               &kp PERIOD              &kp SLASH                   &none
                                                   &mo 1                  &none                    &ht_reptap DEL BACKSPACE    &kp RET  &kp SPACE                 &mo 2
             >;
