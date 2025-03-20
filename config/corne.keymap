@@ -44,88 +44,15 @@
             layers = <0>;
         };
 
-        zed {
-            bindings = <&kp Z>;
-            key-positions = <1 3>;
-            layers = <0>;
-        };
-
         col {
             bindings = <&kp COLON>;
             key-positions = <32 33>;
             layers = <0>;
         };
 
-        semi {
-            bindings = <&kp SEMI>;
-            key-positions = <32 31>;
-            layers = <0>;
-        };
-
-        sch {
-            bindings = <&sch>;
-            key-positions = <13 14 15>;
-            layers = <0>;
-        };
-
-        tch {
-            bindings = <&tch>;
-            key-positions = <14 16 15>;
-            layers = <0>;
-        };
-
-        wh {
-            bindings = <&wh>;
-            key-positions = <2 3>;
-            layers = <0>;
-        };
-
-        ch {
-            bindings = <&ch>;
-            key-positions = <15 14>;
-            layers = <0>;
-            timeout-ms = <10>;
-        };
-
-        th {
-            bindings = <&th>;
-            key-positions = <16 15>;
-            layers = <0>;
-        };
-
-        gh {
-            bindings = <&gh>;
-            key-positions = <4 3>;
-            layers = <0>;
-        };
-
-        ph {
-            bindings = <&ph>;
-            key-positions = <26 27>;
-            layers = <0>;
-        };
-
-        if {
-            bindings = <&if>;
-            key-positions = <21 22>;
-            layers = <0>;
-        };
-
-        els {
-            bindings = <&els>;
-            key-positions = <20 21>;
-            layers = <0>;
-        };
-
-        thn {
-            bindings = <&thn>;
-            key-positions = <17 16>;
-            layers = <0>;
-        };
-
-        fi {
-            bindings = <&fi>;
-            key-positions = <33 34>;
+        ok {
+            bindings = <&ok>;
+            key-positions = <9 8>;
             layers = <0>;
         };
 
@@ -135,29 +62,10 @@
             layers = <5>;
         };
 
-        sshh {
-            bindings = <&sshh>;
-            key-positions = <13 15>;
-            layers = <0>;
-        };
-
-        swit {
-            bindings = <&swit>;
-            key-positions = <13 2>;
-            layers = <0>;
-        };
-
         gam_esc {
             bindings = <&kp ESC>;
             key-positions = <1 2>;
             layers = <5>;
-        };
-
-        au {
-            bindings = <&au>;
-            key-positions = <19 22>;
-            layers = <0>;
-            timeout-ms = <100>;
         };
     };
 
@@ -170,116 +78,11 @@
             tap-ms = <30>;
         };
 
-        wh: wh {
+        ok: wh {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp W &kp H>;
+            bindings = <&kp O &kp K>;
             label = "WH";
-            tap-ms = <30>;
-        };
-
-        th: th {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp T &kp H>;
-            label = "TH";
-            tap-ms = <30>;
-        };
-
-        ch: ch {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp C &kp H>;
-            label = "CH";
-            tap-ms = <30>;
-        };
-
-        ph: ph {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp P &kp H>;
-            label = "PH";
-            wait-ms = <30>;
-            tap-ms = <30>;
-        };
-
-        gh: gh {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp G &kp H>;
-            label = "GH";
-            tap-ms = <30>;
-        };
-
-        sch: sch {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp S &kp C &kp H>;
-            label = "SCH";
-            tap-ms = <30>;
-        };
-
-        tch: tch {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp T &kp C &kp H>;
-            label = "TCH";
-            tap-ms = <30>;
-        };
-
-        if: if {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp I &kp F &kp SPACE>;
-            label = "IF";
-            tap-ms = <30>;
-        };
-
-        els: els {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp E &kp L &kp S &kp E &kp SPACE>;
-            label = "ELS";
-            tap-ms = <30>;
-        };
-
-        thn: thn {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp T &kp H &kp E &kp N &kp SPACE>;
-            label = "THN";
-            tap-ms = <30>;
-        };
-
-        fi: fi {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp F &kp I>;
-            label = "FI";
-            tap-ms = <30>;
-        };
-
-        sshh: sshh {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp S &kp H>;
-            label = "SSHH";
-            tap-ms = <30>;
-        };
-
-        swit: swit {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp S &kp W &kp I &kp T &kp C &kp H &kp SPACE>;
-            label = "SWIT";
-            tap-ms = <30>;
-        };
-
-        au: au {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp A &kp U>;
-            label = "AU";
             tap-ms = <30>;
         };
     };
@@ -328,7 +131,7 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q               &kp W                  &kp E                  &kp R                    &kp T                       &kp Y    &kp U           &kp I           &kp O           &kp P                   &none
+&none  &lingerq Q 0        &kp W                  &kp E                  &kp R                    &kp T                       &kp Y    &kp U           &kp I           &kp O           &kp P                   &none
 &none  &roll_hold LCTRL A  &roll_hold LEFT_ALT S  &roll_hold LEFT_GUI D  &roll_hold LEFT_SHIFT F  &kp G                       &kp H    &roll_hold J A  &roll_hold K E  &roll_hold L I  &roll_hold SEMICOLON H  &none
 &none  &kp Z               &kp X                  &kp C                  &kp V                    &kp B                       &kp N    &kp M           &kp COMMA       &kp PERIOD      &kp SLASH               &none
                                                   &mo 1                  &kp R                    &ht_reptap DEL BACKSPACE    &kp RET  &kp SPACE       &mo 2
@@ -346,10 +149,10 @@
 
         sym {
             bindings = <
-&none  &lingerq Q 0  &kp Z     &none     &none     &none      &kp DLLR   &kp GRAVE  &kp SEMI  &kp COLON    &kp BACKSLASH  &none
-&none  &kp LBRC      &kp LPAR  &kp RPAR  &kp RBRC  &none      &kp CARET  &kp QMARK  &kp EXCL  &kp AMPS     &kp PIPE       &none
-&none  &kp LBKT      &kp LT    &kp GT    &kp RBKT  &none      &kp UNDER  &kp TILDE  &kp AT    &kp PERCENT  &kp POUND      &none
-                               &tog 5    &none     &kp DEL    &none      &none      &none
+&none  &none     &none     &none     &none     &none      &kp DLLR   &kp GRAVE  &kp SEMI  &kp COLON    &kp BACKSLASH  &none
+&none  &kp LBRC  &kp LPAR  &kp RPAR  &kp RBRC  &none      &kp CARET  &kp QMARK  &kp EXCL  &kp AMPS     &kp PIPE       &none
+&none  &kp LBKT  &kp LT    &kp GT    &kp RBKT  &none      &kp UNDER  &kp TILDE  &kp AT    &kp PERCENT  &kp POUND      &none
+                           &tog 5    &none     &kp DEL    &none      &none      &none
             >;
         };
 
