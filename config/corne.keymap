@@ -61,6 +61,12 @@
             key-positions = <1 2>;
             layers = <5>;
         };
+
+        web {
+            bindings = <&web>;
+            key-positions = <2 3 4>;
+            layers = <0>;
+        };
     };
 
     macros {
@@ -77,6 +83,14 @@
             #binding-cells = <0>;
             bindings = <&kp O &kp K>;
             label = "WH";
+            tap-ms = <30>;
+        };
+
+        web: web {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp W &kp E &kp B>;
+            label = "WEB";
             tap-ms = <30>;
         };
     };
